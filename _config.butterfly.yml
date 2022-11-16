@@ -1,0 +1,165 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Hexo
+subtitle: ''
+description: ''
+keywords:
+author: John Doe
+language: en
+timezone: ''
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://mzht03.xyz
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repository: git@github.com:shi-mzht/shi-mzht.github.io.git
+  branch: main
+
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面沒有找到"
+  background: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ea0f57ce30520000018c1b797ad7.png%401280w_1l_2o_100sh.png&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1671074020&t=b2101cb116cf0f7901ba9f0aa5302acc
+
+# 博客菜单栏选项
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
+
+# 代码设置 (高亮，copy...)
+highlight_theme: mac #  darker/ pale night/ mac
+highlight_copy: true # copy button
+highlight_lang: true # show the code language
+highlight_shrink: true # 代码框不展开，需点击 '>' 打开
+code_word_wrap: false # 代码滚动条
+highlight_height_limit: 230 # unit: px，可配置代码高度限制，超出的部分会隐藏，并显示展开按钮。
+
+copy:
+  enable: true
+  copyright:
+    enable: false
+    limit_count: 50
+
+# 右边个人卡片社交信息
+social:
+  fab fa-github: https://github.com/shi-mzht || Github
+  fas fa-envelope: https://mail.qq.com/cgi-bin/frame_html?sid=WgVoFGZQ5j5NWARn&r=2f22517639898f89dd46341b2c2038cc&lang=zh || Email
+
+# Algolia search
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+
+# 本地搜索
+local_search:
+  enable: true
+  preload: true
+  CDN:
+
+# FAvicon 网站图标
+favicon: favicon.ico
+
+# Avater 右边个人信息卡片（头像）
+avatar:
+  img: https://s3.bmp.ovh/imgs/2022/11/15/5b8cb791ed84c67b.jpg
+  effect: false
