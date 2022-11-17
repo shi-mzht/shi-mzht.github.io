@@ -1448,7 +1448,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '\f2dc';
   font-size: 20px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -3348,6 +3348,13 @@ h1.page-title + .tag-cloud-list {
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
+}
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
 }
 #footer-wrap {
   position: relative;
