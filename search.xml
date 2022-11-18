@@ -8,7 +8,7 @@
       <link href="/2022/11/14/Butterfly%E4%B8%BB%E4%BD%93/"/>
       <url>/2022/11/14/Butterfly%E4%B8%BB%E4%BD%93/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;RUNOOB&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><pre><code>$menusEle.length &amp;&amp; $menusEle.forEach(i =&gt; &#123; menusWidth += i.offsetWidth &#125;)      const $searchEle = document.querySelector(&#39;#search-button&#39;)      searchWidth = $searchEle ? $searchEle.offsetWidth : 0      $nav = document.getElementById(&#39;nav&#39;)</code></pre><h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2><pre><code>const adjustMenu = (init) =&gt; &#123;if (init) &#123;  blogNameWidth = document.getElementById(&#39;site-name&#39;).offsetWidth  const $menusEle = document.querySelectorAll(&#39;#menus .menus_item&#39;)  menusWidth = 0  $menusEle.length &amp;&amp; $menusEle.forEach(i =&gt; &#123; menusWidth += i.offsetWidth &#125;)  const $searchEle = document.querySelector(&#39;#search-button&#39;)  searchWidth = $searchEle ? $searchEle.offsetWidth : 0  $nav = document.getElementById(&#39;nav&#39;)&#125;我是代码块1</code></pre><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr><hr><hr><hr><hr><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><blockquote><p>最外层</p><blockquote><p>第一层嵌套</p><blockquote><p>第二层嵌套</p></blockquote></blockquote></blockquote><p><code>main()</code>函数1、安装git</p><p>通过Git安装包进行安装，点击安装包一直点击next，傻瓜式操作</p><p>2、Git的环境变量的配置</p><p>需要绑定用户名和邮箱</p><p>###配置用户名</p><ol><li>git config –global user.name “username”</li></ol><p>//（ “username” 自己的用户名）</p><p>###绑定邮箱</p><ol start="2"><li>git config –global user.email “<a href="mailto:&#x75;&#115;&#101;&#x72;&#110;&#97;&#109;&#x65;&#64;&#101;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#109;">&#x75;&#115;&#101;&#x72;&#110;&#97;&#109;&#x65;&#64;&#101;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a>“</li></ol><p>/ /(“<a href="mailto:&#117;&#x73;&#x65;&#x72;&#x6e;&#97;&#109;&#x65;&#x40;&#101;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#117;&#x73;&#x65;&#x72;&#x6e;&#97;&#109;&#x65;&#x40;&#101;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a>“注测账号时用到的邮箱 )</p><p>以上命令执行完毕后，用git config –global –list 命令查看是否成功</p><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>3.继续在命令框输入以下命令： ssh-keygen -t rsa</p><p>生成ssh,输入以下命令，连敲3次回车键，结束后，去自己的目录下,查看是否有.ssh 件夹</p><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><p>4.将ssh文件夹中的公钥(id_rsa.pub)添加到Gitee管理平台中</p><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><p>5.查看自己的公钥是什么：cat /.ssh/id_rsa.pub</p><p>查看配置是否成功，第一次需要输入：yes</p><p>ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a></p><p>[注意：git remote rm origin如果自己的用户名配置错误，则可以使用此代码更改用户名]</p><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"><br><img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标" title="RUNOOB"></p>]]></content>
+        <content type="html"><![CDATA[<p>&nbsp; &nbsp; 图床的作用：对于在写markdown笔记中有时候会使用到图片，如果使用的是本地的图片，那么上传到别的平台如csdn、博客园等就会失效。我们也可以将图片放置在贴图库、七牛云等平台使用其链接，过了一段时间也会失效，对于我们记录笔记会造成很大困扰，我们不妨搭建自己图床来存储图片，本期我们使用Gitee来搭建图床。</p><p>一、Gitee相关操作（截至2022年暑假已不支持，推荐使用OSS存储服务）</p><p>&nbsp; &nbsp; 提示：推荐使用OSS存储服务来存储我们的图片资源，OSS存储服务开通及集成PicGo可见<a href="https://www.cnblogs.com/SZX03/p/16902647.html" target="_blank" rel="noopener">：阿里云开通OSS存储服务详细流程</a></p><p>1、创建Gitee仓库</p><p>① 注册Gitee账号，新建仓库</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118104927027-329541307.png" height="134" width="500" /></p><p>② 选择公开，使用Readme文件初始化，点击创建</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118104951295-1341393977.png" height="292" width="500" /></p><p>③ 创建的仓库中，找到服务-Gitee Pages，点击设置静态页面</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105008863-2029559403.png" height="198" width="500" /></p><p id="1668740422950"></p><p>④ 我们不选择HTTPS，点击启动，稍等片刻即可</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105034102-130901173.png" height="285" width="500" /></p><p>2、获取Gitee账号的Token私人令牌</p><p>① 点击右上角的设置,找到私人令牌，点击生成令牌</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105055924-648047898.png" height="188" width="500" /></p><p id="1668740459342"></p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105118666-1108325724.png" height="271" width="500" /></p><p>② 我们只选择projects，然后点击提交，输入密码即可获取</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105149355-440121045.png" width="500" /></p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105342896-1525849895.png" width="500" /></p><p>注意：私人令牌请自己主动保管，只会在Gitee平台上显示这一次<br />二、PicGo工具<br />1、下载PicGo工具(快捷上传图片到Gitee)</p><p>Github地址：<a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo/releases</a></p><p>链接：<a href="https://pan.baidu.com/s/1XNhVAo_dLE0VFd0z2itVxg" target="_blank" rel="noopener">https://pan.baidu.com/s/1XNhVAo_dLE0VFd0z2itVxg</a><br />提取码：nd5n</p><p>这里我们直接选择.exe下载安装包</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105412889-1237631957.png" height="339" width="562" /><br />2、安装并配置PicGO的Gitee插件</p><p>① 我们搜索gitee，选择下面对应插件，点击安装</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118105433414-1289756091.png" height="283" width="500" /></p><p>② 点击PicGo设置，勾选时间戳重命名、开启上传提示以及对应显示图床为gitee</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110456708-821323668.png" width="500" /></p><p>③ 右击选择配置uploader- gitee，进行配置信息</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110241619-1242176961.png" width="500" /></p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110327761-1490970377.png" width="500" /></p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110546798-1392822182.png" width="500" /></p><p id="1668740614924"></p><p>注意这个repo对应的是你仓库浏览器地址的后半部分，如下：</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110611351-1961148557.png" width="500" /></p><p>这样我们就配置完成啦！<br />3、PicGo的使用</p><p>我们到达上传区，选择图片上传的位置gitee(一定要勾选)</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110648648-1342126689.png" width="500" /></p><p>两种方式上传</p><p>&nbsp; &nbsp; 第一种：点击上传，这是从文件夹中选择上传的</p><p>&nbsp; &nbsp; 第二种：复制图片，点击下面的剪切板上传即可。</p><p><br />这是根据时间戳来命名的，不用担心名字重复的问题，点击确定上传即可</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110721489-633577815.jpg" height="150" width="252" /></p><p>注意右下角会有上传成功的提示字样，接着我们点击PicGo的相册进行查看与复制对应链接</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110742038-861207832.png" height="209" width="355" /></p><p>我们在上传之后也可以上Gitee进行查看，两个是同步的：</p><p><img src="https://img2022.cnblogs.com/blog/2974652/202211/2974652-20221118110814669-305666624.png" height="107" width="359" /><br />4、注意点说明</p><p>&nbsp; &nbsp; 我们上传图片时，不要上传过于大的图片(如3MB)，会上传失败，一般来说对于你网页上截图不会有失败的情况<br />&nbsp; &nbsp; 对于GicGo，也是在不断更新中，有时候也会出现异常的错误，我们可以随时上官网下载最新版本<br /><br /></p><blockquote><p>文章来源于CND的文章<a href="https://changlu.blog.csdn.net/article/details/109469396?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109469396-blog-117025387.pc_relevant_default&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109469396-blog-117025387.pc_relevant_default&amp;utm_relevant_index=2" target="_blank" rel="noopener">使用码云 Gitee+PicGo来搭建个人图床</a>，原作者<a href="https://changlu.blog.csdn.net/?type=blog" target="_blank" rel="noopener">长路</a>。如有侵权问题请在下方留言。</p></blockquote>]]></content>
       
       
       
@@ -25,6 +25,17 @@
       <url>/manifest.json</url>
       
         <content type="html"><![CDATA[{"name":"string","short_name":"Junzhou","theme_color":"#49b1f5","background_color":"#49b1f5","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"images/pwaicons/36.png","sizes":"36x36","type":"image/png"},{"src":"images/pwaicons/48.png","sizes":"48x48","type":"image/png"},{"src":"images/pwaicons/72.png","sizes":"72x72","type":"image/png"},{"src":"images/pwaicons/96.png","sizes":"96x96","type":"image/png"},{"src":"images/pwaicons/144.png","sizes":"144x144","type":"image/png"},{"src":"images/pwaicons/192.png","sizes":"192x192","type":"image/png"},{"src":"images/pwaicons/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>照片</title>
+      <link href="/Gallery/index.html"/>
+      <url>/Gallery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁紙</div>  <p>收藏的一些壁紙</p>  <a href='/Gallery/wallpaper'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">OH MY GIRL</div>  <p>關於OH MY GIRL的圖片</p>  <a href='/Gallery/ohmygirl'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -64,9 +75,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -75,20 +86,9 @@
     
     
     <entry>
-      <title>照片</title>
-      <link href="/Gallery/index.html"/>
-      <url>/Gallery/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁紙</div>  <p>收藏的一些壁紙</p>  <a href='/Gallery/wallpaper'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">OH MY GIRL</div>  <p>關於OH MY GIRL的圖片</p>  <a href='/Gallery/ohmygirl'></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
