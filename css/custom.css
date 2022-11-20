@@ -30,9 +30,11 @@
     margin: 0 20px !important;
 }
 
+/* 文章背景色 */
 .layout>div:first-child:not(.recent-posts),
 #aside-content #card-toc {
-    background-color: rgba(255, 255, 255, 0.91) !important;
+    background-color: rgba(255, 255, 255, 0.91);
+    /* opacity: 0.9; */
 }
 
 /* 翻页按钮居中 */
